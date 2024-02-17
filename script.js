@@ -29,6 +29,8 @@ const displayTextWithDelay = async () => {
 
   // Display the user-provided text after the delay
   outputDiv.textContent = text;
+	 document.getElementById('text').value = "";
+ document.getElementById('delay').value = "";
 };
 
 // Event listener for submit button click
