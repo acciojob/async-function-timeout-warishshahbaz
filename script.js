@@ -17,12 +17,12 @@ const displayTextWithDelay = async () => {
 
   // Check if text and delay are provided
   if (!text || isNaN(delayValue)) {
-    outputDiv.textContent = 'Please enter valid text and delay values.';
+    outputDiv.textContent = '';
     return;
   }
 
   // Display loading message
-  outputDiv.textContent = 'Loading...';
+  // outputDiv.textContent = 'Loading...';
 
   // Introduce delay before resolving the promise
   await delay(delayValue);
